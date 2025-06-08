@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Deposit Calculator - Calculate FD Maturity Amount</title>
+    <meta name="description" content="Calculate your Fixed Deposit maturity amount with compound interest. Free FD calculator with PDF export and shareable results. Plan your investments wisely." />
+    <meta name="keywords" content="fixed deposit calculator, FD calculator, compound interest, maturity amount, investment calculator" />
+    <meta property="og:title" content="Fixed Deposit Calculator - Calculate FD Maturity Amount" />
+    <meta property="og:description" content="Calculate your Fixed Deposit maturity amount with compound interest. Free FD calculator with PDF export and shareable results." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fixed Deposit Calculator" />
+    <meta name="twitter:description" content="Calculate your Fixed Deposit maturity amount with compound interest." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      // Prevent FOUC (Flash of Unstyled Content) for dark mode
+      (function() {
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+  </body>
+</html>
